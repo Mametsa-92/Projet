@@ -1,0 +1,349 @@
+
+/*/Mobil-first/*/
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    
+}
+body{
+    background-color:#fff3b2;
+    margin:0 auto; 
+
+}
+
+/***********Header************/
+
+header nav {
+    background-color:  	#ff9b93;
+    border-left-style: none;
+    border-right-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:15px;
+}
+header nav a { 
+    color: #41584b;
+    text-decoration: none;
+    padding: 10px;
+    
+	
+}
+
+header nav a:hover { 
+    color:#ffe0d8;
+    background-color: #03506f;
+    
+}
+
+.acceuil{
+	
+    text-align:justify;
+    color:#555;
+    display:block;
+    font-size:1.4em;
+}
+
+/*/titre/*/
+.stella{
+   font-family: 'Norican', cursive;
+   font-size:8em;
+   color:#ff9b93;
+   text-align:center;
+   
+   
+}
+
+.whole{
+    color:#03506f;
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+/*******************main******************/
+
+main{
+    padding: 20px;
+}
+.fleure{
+   
+    text-align: center;
+ }
+ 
+ p{
+     padding: 10px;
+     text-align:justify;
+     margin:0 auto;
+     font-size:1.4em;
+     color: #41584b;
+ }
+ 
+ 
+ 
+/*/image main*/
+.hidetwo{
+    display: block;
+}
+.stellawhole{
+   
+    border:solid 3px #41584b;
+    border-radius: 5px;
+    display: block;
+    margin: 35px auto;
+    width:270px;
+    height:270px;
+}
+.stellawhole:hover{
+    
+    transform: scale(0.8);
+}
+
+
+/*/slidercatalogue/*/
+
+
+#slider {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+#slider > img {
+    height: 300px;
+    width: 300px;
+}
+
+#precedent, #suivant {
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    font-size: 50px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: #ff9b93;
+    
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+
+
+
+
+
+
+/*/personalisation/*/
+.coeurbleu{
+    display: block; 
+    border:solid 3px #41584b;
+    border-radius: 5px;
+    margin: 35px auto;
+    width:270px;
+    height:270px;
+}
+.coeurbleu:hover{
+    
+    transform: scale(0.8);
+}
+
+
+
+
+/*/concours/*/
+.imgconcours{
+   
+    display: block; 
+    border:solid 3px #41584b;
+    border-radius: 5px;
+    margin: 35px auto;
+    width:270px;
+    height:270px;
+    
+}
+
+.imgconcours:hover{
+    transform: scale(0.8);
+ 
+}
+
+h2{
+    color: #41584b;
+    text-align: center;
+}
+
+
+.bouton{
+text-align:center;
+}
+button {
+	margin: 25px 0;
+	padding: 15px 25px;
+    border: 0;
+    background-color: #ff9b93;
+    color:#41584b;
+    
+}
+
+
+
+
+
+#search
+{
+    display: block;
+    margin: .4rem 0;
+    
+}
+#contact p{
+    text-align: left;
+  
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
+
+/*/footer/*/
+
+#outro{
+    color: black;
+    text-align:justify;
+}
+
+footer{
+    
+	background-color:#41584b;
+    border-left-style: none;
+    border-right-style: none;
+    padding: 20px;
+    
+}
+#copyright{
+   
+    text-align: center;
+}
+
+
+
+/*/768px (tablet)/*/
+@media screen and (min-width:768px){
+   
+}
+/*/min-width:1025px/*/
+@media screen and (min-width:1025px){
+    main{
+        width:100%;
+        margin:0 auto;
+        
+        
+    }
+ 
+    .hide{
+        display: flex;
+    }
+    
+    
+    
+    header nav{
+        
+       display: block;
+        
+    }
+    header nav a{
+        flex-grow: 4;
+        flex-basis: 25%;
+    }
+    .stellawhole{
+       
+        border:solid 3px #41584b;
+        border-radius: 50%;
+        width:270px;
+        height:270px;
+        
+    }
+    
+/**************slider****************/
+
+
+.slider-layout {
+    position : relative;
+    
+  }
+  
+  .slider-figure {
+    display : none;
+    will-change: transform;
+  }
+  
+  .slider-figure.active {
+    display : block;
+  }
+  
+  .slider-picture {
+    border-radius : 1rem;
+    width: 530px;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.5);
+  }
+  
+  .slider-legend {
+    position : absolute;
+    left : 1rem; right :1rem; top : 1rem;
+    padding : 1rem;
+    border-radius : 1rem 1rem 0 0;
+    background : rgba(255, 255, 255, 0.5);
+    font-size : 1.6em;
+    font-weight : bold;
+  }
+  
+  .next, .prev {
+    display: inline-block;
+    width : 2em;
+    height : 2em;
+    line-height : 2em;
+    position : absolute;
+    top : 200px;
+    transform : translateY(-50%);
+    text-align: center;
+    font-size : 3em;
+    color : white;
+  }
+  
+  .next:hover,
+  .prev:hover {
+    background-color : rgba(255,255,255,0.5);
+    color : #dd5735;
+    text-decoration: none;
+  }
+  
+  .prev {
+    left : -60px;
+  }
+  
+  .next {
+    right : -400px;
+  }
+
+
+}
